@@ -58,19 +58,51 @@ const pizzas = [
 // })
 
 // b) Responder: ¿Hay alguna pizza que valga menos de $600?
-// pizzas.forEach((pizza)=> {
-//   if (pizza.precio <= 600) {
-//     console.log(pizza)
-//   }
+//  const barata = pizzas.find((pizza) => {
+//   return pizza.precio <= 600;
 // })
 
+// console.log(`la pizza de ${barata.nombre}, vale ${barata.precio}`);
+
+
 // c) El nombre de cada pizza con su respectivo precio.
-// pizzas.forEach((pizza) => {
-//   console.log(pizza.nombre, pizza.precio)
+// const names = pizzas.filter((elem) => {
+//   return elem;
 // } )
+// names.forEach(element => {
+  
+// });
+
+// console.log(names)
+
+// for (const pizza of pizzas) {
+//   console.log(`La pizza ${pizza.nombre} cuesta ${pizza.precio} pesos.`);
+// }
+
+// pizzas.forEach((pizza) => {
+//   console.log(`La pizza ${pizza.nombre} cuesta ${pizza.precio} pesos.`);
+// });
+
 
 // d) Todos los ingredientes de cada pizza (En cada iteración imprimir los ingredientes de la pizza que se esta recorriendo). Ayuda: van a tener que realizar dos recorridos, ya que cada pizza del array de pizzas tiene una propiedad "ingredientes" cuyo valor es un array con ingredientes.
 
 // pizzas.forEach((pizza) => {
 //   console.log(pizza.nombre, pizza.ingredientes);
 // })
+
+
+// pizzas.forEach((pizza) => {
+//   console.log(`la ${pizza.nombre}, contiene:`);
+//   pizza.ingredientes.forEach((ingrediente) =>{
+//     console.log(ingrediente);
+//   })
+//   console.log(" ");
+// })
+
+// for (const pizza of pizzas) {
+//   console.log(`La pizza ${pizza.nombre} cuesta ${pizza.precio} pesos y sus ingredientes son:`);
+//   for (const ingrediente of pizza.ingredientes) {
+//     console.log(ingrediente);
+//   }
+//   console.log(" ");
+// }
